@@ -21,14 +21,14 @@ Show2 = []
 
 def getCards(name, r, Show2, shape):
     if r == 1:
-        Show2.append(name+'A')
+        Show2.append(name + 'A')
     elif r <= 10:
-        Show2.append(name+str(r))
+        Show2.append(name + str(r))
     else:
-        Show2.append(name+shape[r - 11])
+        Show2.append(name + shape[r - 11])
 
 for x in range(5):
-    y = random.randint(1,54)
+    y = random.randint(1, 54)
     Show1.append(y)
 for r in Show1:
     if r <= 13:
